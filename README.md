@@ -68,6 +68,9 @@ Run against a website:
 - **Referrer-Policy** - Controls referrer information
 - **Permissions-Policy** - Controls browser features
 
+## Example Output
+
+![Security-headers-demo](images/demo.jpg)
 
 ## Why This Tool?
 
