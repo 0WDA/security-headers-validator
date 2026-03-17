@@ -70,13 +70,13 @@ class SecurityHeadersValidator:
             self.headers = dict(response.headers)
             return True
         except requests.exceptions.Timeout:
-            print(f"❌ Error: Request timed out")
+            print(f"Error: Request timed out")
             return False
         except requests.exceptions.ConnectionError:
-            print(f"❌ Error: Could not connect to {self.url}")
+            print(f"Error: Could not connect to {self.url}")
             return False
         except Exception as e:
-            print(f"❌ Error: {str(e)}")
+            print(f"Error: {str(e)}")
             return False
     
     def analyze(self):
@@ -150,7 +150,7 @@ class SecurityHeadersValidator:
         """Generate human-readable text report"""
         lines = []
         lines.append("\n" + "=" * 70)
-        lines.append("🔒 SECURITY HEADERS AUDIT REPORT")
+        lines.append("SECURITY HEADERS AUDIT REPORT")
         lines.append("=" * 70)
         lines.append(f"\nURL: {self.url}\n")
         
